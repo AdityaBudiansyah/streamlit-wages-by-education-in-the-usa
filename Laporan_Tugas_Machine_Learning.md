@@ -1,29 +1,26 @@
 # Laporan Proyek Machine Learning
 
-### Nama : Ikhsan Al Fajar
+### Nama : Aditya Budiansyah
 
-### Nim : 211351062
+### Nim : 211351004
 
 ### Kelas : Pagi B
 
 ## Domain Proyek
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
-
-Permainan video atau yang lebih dikenal sebagai "video game" adalah permainan yang menggunakan interaksi dengan antarmuka (User Interface) melalui gambar yang dihasilkan oleh peranti video. Dalam perkembangan zaman, video game sudah menjadi bagian yang tidak terpisahkan dari kebudayaan kita dan bahkan melahirkan industri yang bernilai jutaan dollar. Berbagai jenis perangkat diciptakan seiring dengan perkembangan tersebut. Genre dari video game juga mengalami perkembangan yang pesat bersamaan dengan berkembanganya video game itu sendiri. Maka dari itu dilakukanlah analisis data guna mendapatkan informasi mengenai popularitas dari video game dengan genre paling sukses dan platform yang digunakannya. Selain itu, guna mendapatkan informasi mengenai penerbit mana yang telah mencapai kesuksesannya dilihat dari banyaknya seri judul yang keluar serta angka penjualannya.
+Data yang telah diperoleh dapat digunakan sebagai gambaran dari sumber penghasilan yang berada di USA dilihat dari tingkat pendidikannya. Adapun tujuan dari penggunaan data ini sebagai gambaran dari penghasilan yang akan di dapat sebagai calon sarjana.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Adapun alasan survei data analisis ini dilakukan guna mengetahui perkembangan dari video game itu sendiri guna mengetahui bagaimana genre dan platform dari video game itu berkembang diberbagai negara, sehingga dari pihak penerbit maupun pembuat game dapat memikirkan serta memproduksi produk-produk video game baru yang sesuai dengan target pasar berdasarkan minat genre maupun platform dari video game itu sendiri.
+- Data dan output ini dapat digutuhkan guna digunakan sebagai gambaran dari penghasilan yang akan di dapat sesuai dengan tingkatan Pendidikan kita, sehingga kita dapat mempertimbangkan tentang tingkat Pendidikan ke depannya.
 
 - Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
 
-  Format Referensi: [Judul Referensi](https://scholar.google.com/)
+  Format Referensi: [Education pays, 2021](https://www.bls.gov/careeroutlook/2022/data-on-display/education-pays.htm)
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
+Dapat melihat gambaran dari data nyata yang sudah diambil selama beberapa tahun terakhir tentang penghasilan yang didapat berdasarkan tingkat Pendidikan
 
 Bagian laporan ini mencakup:
 
@@ -31,112 +28,262 @@ Bagian laporan ini mencakup:
 
 Menjelaskan pernyataan masalah latar belakang:
 
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- Masalah ini dapat dilihat dari banyaknya orang yang masih menyepelekan soal Pendidikan sehingga kurang terbuka mengenai pekerjaan di kemudian harinya
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
 
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- - Maka dari itu riset yang telah dilakukan dan hasil dari riset ini dapat membuka pemikiran masyarakat luas mengenai pentingnya Pendidikan dan seberapa berpengaruhnya Pendidikan untuk keberlangsungan hidup di masa depan, terutama untuk generasi muda agar lebih memikirkan lagi tentang Pendidikan ayang akan menjadi penting di kehidupannya kelak
 
 Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+### Solution statements
 
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut:
-
-  ### Solution statements
-
-  - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-  - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+- Menyebarluaskan website yang berisi data mengenai hasil pendapatan berdasarkan tingkat Pendidikan kepada pelajar, mahasiswa, orang tua, maupun masyarakat luas
+- Mengadakan sosialisasi mengenai pentingnya Pendidikan dan seberapa berpengaruhnya terhadap kehidupan di masa depan kelak.
+- Model yang dihasillkan dari datasets ini menggunakan metode Linear Regression.
 
 ## Data Understanding
 
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. dataset wajib menggunakan [kaggle](https://www.kaggle.com/) dan **atribut yang digunakan minimal 8 atribut**. Sertakan juga sumber atau tautan untuk mengunduh dataset.<br>
+Kumpulan data Upah berdasarkan Pendidikan memberikan wawasan tentang upah rata-rata per jam pekerja di AS, yang dipilah berdasarkan tingkat pendidikan tertinggi yang dicapai.
 
-Contoh: [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).
+Kumpulan data ini mencakup periode 1973 hingga 2022 dan bersumber dari Perpustakaan Data State of Working America milik Economic Policy Institute.
 
-Kumpulan dataset ini, saya mengambil dari website kaggle yang bersumber dari vgchartz.com, menawarkan banyak wawasan tentang dinamika antara platform dan genre untuk 100 video game teratas di seluruh dunia. Amati platform mana yang mendorong penjualan global, genre apa yang paling sukses di berbagai wilayah di seluruh dunia, dan bagaimana kedua faktor ini berubah seiring berjalannya waktu. Analisis data ini untuk menginformasikan pemahaman Anda tentang industri game dan temukan tren yang mendorong pengembang game menuju kesuksesan!
-
-[Global Video Game Sales](https://www.kaggle.com/datasets/thedevastator/global-video-game-sales)
+[Wages by Education in the USA (1973-2022)](https://www.kaggle.com/datasets/asaniczka/wages-by-education-in-the-usa-1973-2022).
 
 Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
 
-### Variabel-variabel pada Global Video Game Sales adalah sebagai berikut:
+### Variabel-variabel pada Wages by Education in the USA adalah sebagai berikut:
 
-- Rank : Peringkat game berdasarkan penjualan global. (int64)
-- Name : Nama permainan.
-- Platform : Nama permainan.
-- Year : Tahun game ini dirilis.
-- Genre : Genre Permainan.
-- Publisher : Penerbit permainan.
-- NA_Sales : Penjualan game di Amerika Utara.
-- EU_Sales : Penjualan game di Eropa.
-- JP_Sales : Penjualan game di Jepang.
-- Other_Sales : Penjualan game di Wilayah lain.
-- Global_Sales : Total penjualan game di seluruh dunia.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+- year : menunjukan tahun (int64)
+- less_than_hs : kurang dari menunjukan sekolah menengah atas (float64)
+- high_school : menunjukan sekolah menengah atas (float64)
+- some_college : menunjukan beberapa perguruan tinggi (float64)
+- bachelors_degree : menunjukan gelar sarjana (float64)
+- advanced_degree : menunjukan gelar lanjutan (float64)
+- men_less_than_hs : menunjukan laki laki kurang dari sekolah menengah atas (float64)
+- men_high_school : menunjukan sekolah menengah laki laki (float64)
+- men_some_college : menunjukan laki laki beberapa perguruan tinggi (float64)
+- men_bachelors_degree : menunjukan gelar sarjana laki laki (float64)
+- men_advanced_degree : menunjukan gelar lanjutan laki laki (float64)
+- women_less_than_hs : menunjukan perempuan kurang dari sekolah menengah atas (float64)
+- women_high_school : menunjukan sekolah menengah perempuan (float64)
+- women_some_college : menunjukan perempuan beberapa perguruan tinggi (float64)
+- women_bachelors_degree : menunjukan gelar sarjana perempuan (float64)
+- women_advanced_degree : menunjukan gelar lanjutan perempuan (float64)
+- white_less_than_hs : menunjukan kulit putih kurang dari sekolah menengah atas (float64)
+- white_high_school : menunjukan sekolah menengah kulit putih (float64)
+- white_some_college : menunjukan kulit putih beberapa perguruan tinggi (float64)
+- white_bachelors_degree : menunjukan gelar sarjana kulit putih (float64)
+- white_advanced_degree : menunjukan gelar lanjutan kulit putih (float64)
+- black_less_than_hs : menunjukan kulit hitam kurang dari sekolah menengah atas (float64)
+- black_high_school : menunjukan sekolah menengah kulit hitam (float64)
+- black_some_college : menunjukan kulit hitam beberapa perguruan tinggi (float64)
+- black_bachelors_degree : menunjukan gelar sarjana kulit hitam (float64)
+- black_advanced_degree : menunjukan gelar lanjutan kulit hitam (float64)
+- hispanic_less_than_hs : menunjukan hispanik kurang dari sekolah menengah atas (float64)
+- hispanic_high_school : menunjukan sekolah menengah hispanik (float64)
+- hispanic_some_college : menunjukan hispanik beberapa perguruan tinggi (float64)
+- hispanic_bachelors_degree : menunjukan gelar sarjana hispanik (float64)
+- hispanic_advanced_degree : menunjukan gelar lanjutan hispanik (float64)
+- white_men_less_than_hs : menunjukan laki laki kulit putih kurang dari sekolah menengah atas (float64)
+- white_men_high_school : menunjukan sekolah menengah laki laki kulit putih (float64)
+- white_men_some_college : menunjukan laki laki kulit putih beberapa perguruan tinggi (float64)
+- white_men_bachelors_degree : menunjukan gelar sarjana laki laki kulit putih (float64)
+- white_men_advanced_degree : menunjukan gelar lanjutan laki laki kulit putih (float64)
+- black_men_less_than_hs : menunjukan laki laki kulit hitam kurang dari sekolah menengah atas (float64)
+- black_men_high_school : menunjukan sekolah menengah laki laki kulit hitam (float64)
+- black_men_some_college : menunjukan laki laki kulit hitam beberapa perguruan tinggi (float64)
+- black_men_bachelors_degree : menunjukan gelar sarjana laki laki kulit hitam (float64)
+- black_men_advanced_degree : menunjukan gelar lanjutan laki laki kulit hitam (float64)
+- hispanic_men_less_than_hs : menunjukan laki laki hispanik kurang dari sekolah menengah atas (float64)
+- hispanic_men_high_school : menunjukan sekolah menengah laki laki hispanik (float64)
+- hispanic_men_some_college : menunjukan laki laki hispanik beberapa perguruan tinggi (float64)
+- hispanic_men_bachelors_degree : menunjukan gelar sarjana laki laki hispanik (float64)
+- hispanic_men_advanced_degree : menunjukan gelar lanjutan laki laki hispanik (float64)
+- white_women_less_than_hs : menunjukan perempuan kulit putih kurang dari sekolah menengah atas (float64)
+- white_women_high_school : menunjukan sekolah menengah perempuan kulit putih (float64)
+- white_women_some_college : menunjukan perempuan kulit putih beberapa perguruan tinggi (float64)
+- white_women_bachelors_degree : menunjukan gelar sarjana perempuan kulit putih (float64)
+- white_women_advanced_degree : menunjukan gelar lanjutan perempuan kulit putih (float64)
+- black_women_less_than_hs : menunjukan perempuan kulit hitam kurang dari sekolah menengah atas (float64)
+- black_women_high_school : menunjukan sekolah menengah perempuan kulit hitam (float64)
+- black_women_some_college : menunjukan perempuan kulit hitam beberapa perguruan tinggi (float64)
+- black_women_bachelors_degree : menunjukan gelar sarjana perempuan kulit hitam (float64)
+- black_women_advanced_degree : menunjukan gelar lanjutan perempuan kulit hitam (float64)
+- hispanic_women_less_than_hs : menunjukan perempuan hispanik kurang dari sekolah menengah atas (float64)
+- hispanic_women_high_school : menunjukan sekolah menengah perempuan hispanik (float64)
+- hispanic_women_some_college : menunjukan perempuan hispanik beberapa perguruan tinggi (float64)
+- hispanic_women_bachelors_degree : menunjukan gelar sarjana perempuan hispanik (float64)
+- hispanic_women_advanced_degree : menunjukan gelar lanjutan perempuan hispanik (float64)
 
 ## Data Preparation
 
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+### Data Collection
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+Untuk data collection ini, saya mendapatkan dataset yang nantinya digunakan dari website kaggle dengan nama dataset Wages by Education in the USA
 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+### Data Discovery And Profiling
+
+Untuk bagian ini, kita akan menggunakan teknik EDA. <br>
+Pertama kita mengimport semua library yang dibutuhkan,
+
+```bash
+import pandas as pd
+import numpy as np
+import matplotlib.pypot as plt
+import seaborn as sns
+```
+
+Karena kita menggunakan google colab untuk mengerjakannya maka kita akan import files juga,
+
+```bash
+from google.colab import files
+```
+
+Lalu mengupload token kaggle agar nanti bisa mendownload sebuah dataset dari kaggle melalui google colab
+
+```bash
+file.upload()
+```
+
+Setelah mengupload filenya, maka kita akan lanjut dengan membuat sebuah folder untuk menyimpan file kaggle.json yang sudah diupload tadi
+
+```bash
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!ls ~/.kaggle
+```
+
+lalu mari kita download datasetsnya
+
+```bash
+!kaggle datasets download -d azadshahvaladov/wages-by-education-in-the-usa-1973-2022
+```
+
+Selanjutnya kita harus extract file yang tadi telah didownload
+
+```bash
+!mkdir wages-by-education-in-the-usa-1973-2022
+!unzip wages-by-education-in-the-usa-1973-2022.zip -d wages-by-education-in-the-usa-1973-2022
+!ls wages-by-education-in-the-usa-1973-2022
+```
+
+Mari lanjut dengan memasukkan file csv yang telah diextract pada sebuah variable, dan melihat 5 data paling atas dari datasetsnya
+
+```bash
+df = pd.read_csv("wages-by-education-in-the-usa-1973-2022/wages_by_education.csv")
+df.head()
+```
+
+Untuk melihat mengenai type data dari masing masing kolom kita bisa menggunakan property info,
+
+```bash
+df.info()
+```
+
+Selanjutnya kita akan memeriksa apakah datasetsnya terdapat baris yang kosong atau null dengan menggunakan seaborn,
+
+```bash
+sns.heatmap(df.isnull())
+```
+
+![Alt text](heatmap.png) <br>
+
+Mari kita lanjut dengan data exploration kita,
+
+```bash
+plt.figure(figsize=(10,8))
+sns.heatmap(df.corr(), annot=True)
+```
+
+![Alt text](image.png)
 
 ## Modeling
 
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+sebelumnya mari kita import library yang nanti akan digunakan,
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+```bash
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+```
 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+Langkah pertama adalah memasukkan kolom-kolom fitur yang ada di datasets dan juga kolom targetnya,
+
+```bash
+features = ['year','less_than_hs','high_school','some_college','advanced_degree','men_less_than_hs','men_high_school','men_some_college','men_bachelors_degree','men_advanced_degree','women_less_than_hs','women_high_school','women_some_college','women_bachelors_degree','women_advanced_degree']
+x = df[features]
+y = df['bachelors_degree']
+x.shape, y.shape
+```
+
+Selanjutnya kita akan menentukan berapa persen dari datasets yang akan digunakan untuk test dan untuk train
+
+```bash
+x_train, X_test, y_train, y_test = train_test_split(x,y,random_state=70)
+y_test.shape
+```
+
+lalu membuat mode dan memasukkan X_train dan y_train pada model dan memasukkan value predict pada y_pred,
+
+```bash
+lr = LinearRegression()
+lr.fit(x_train,y_train)
+pred = lr.predict(X_test)
+```
+
+sekarang kita bisa melihat score dari model kita,
+
+```bash
+score = lr.score(X_test, y_test)
+print('akurasi model regresi linier = ', score)
+```
+
+Bagus juga, 99.97%, mari kita test menggunakan sebuah array value
+
+```bash
+input_data = np.array([[2021,16.74,22.28,24.92,53.45,18.34,24.36,27.96,47.83,63.52,14.36,19.36,21.97,35.08,44.8]])
+
+prediction = lr.predict(input_data)
+print('Estimasi bachelors degree education :', prediction)
+```
+
+berhasil!!, sekarang modelnya sudah selesai, mari kita export sebagai sav agar nanti bisa kita gunakan pada project web streamlit kita.
+
+```bash
+import pickle
+
+filename = 'estimasi-wages-by-education-in-the-usa.sav'
+pickle.dump(lr,open(filename,'wb'))
+```
 
 ## Evaluation
 
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Disini saya menggunakan R2 score sebagai metrik evaluasi.
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
+R-squared atau R2 pada dasarnya digunakan untuk melihat bagaimana penambahan variabel independen membantu menjelaskan varians variabel dependen. Secara umum R2 dapat memberikan ukuran seberapa baik model dalam menjelaskan variabel dependen (variabel yang dipengaruhi) atau goodness of fit.
 
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+R2 secara definisi merupakan rasio dari varians yang dijelaskan oleh variabel independen (penjelas) dibandingkan varians tanpa adanya variabel independen, berikut rumus dari R2.
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+R2 = SSE/SST = 1 - SSR/SST
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+Setelah itu saya menerapkannya dalam kode menggunakan fungsi r2_score, seperti berikut :
 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+```bash
+from sklearn.metrics import r2_score
+
+r2 = r2_score(y_test, pred)
+print('r2 score for perfect model is', r2)
+```
+
+dan hasil yang saya dapatkan adalah 0.9997690717252785 atau 99.97%, itu berarti model ini memiliki keseimbangan yang baik antara presisi dan recall.
 
 ## Deployment
 
-pada bagian ini anda memberikan link project yang diupload melalui streamlit share. boleh ditambahkan screen shoot halaman webnya.
+[My Estimation App](https://app-wages-by-education-in-the-usa-aditya.streamlit.app/).
 
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
-
-san mengenai metrik yang digunakan
-
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+![Alt text](app_streamlit.png)
 
 ##
